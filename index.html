@@ -4,22 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello!</title>
-
-<link rel="icon" href="logo-edb.png" type="image/png" sizes="8x8">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Elif Dilara Bora - Product Designer</title>
+    <link rel="icon" href="icon.edb.png" type="png">
 </head>
 
-<body style="margin: 30pt;">
-    
-    <h1 style="color: rgb(255, 142, 50);">Hello!</style></h1> 
-    <h2>It's Dilara!</h2>
-<img src="foto-edb.png" type= "image/png" alt="That's me" width="350"> 
-<p style="font-size: 13pt;">I am a product designer who is eager to learn, <br> develop and create more!</p> 
-        <br>
-<p>You can get more informations about me by clicking <a href="cv.html"> here.</a></p>
-<a href="http://www.behance.com/edilarabora"> Also, here is my portfolio link if you are interested! </a>
+<body>
+    <div class="header">
+        <div class="inner_header">
+            <div class="logo_container">
+                <a href="index.html"><img src="icon.edb.png" type="png" height="60"></a>
+            </div>
+                <ul class="navigation">
+                <a href="about.html"><li>About</li></a> 
+                <a href="projects.html"><li>Projects</li></a>
+                <a href="photography.html"><li>Photography</li></a>
+            </ul>
+        </div>
+    </div>
 
+    <div class="cursor"></div>
 
+    <script>
+const cursor = document.querySelector('.cursor');
+document.addEventListener('mousemove' , e => {
+    cursor.setAttribute("style" , "top: "+(e.pageY - 7.5)+"px; left: "+(e.pageX - 7.5)+"px;")
+})
+
+document.addEventListener('click', () => {
+    cursor.classList.add("expand");
+})
+
+setTimeout(() => {
+    cursor.classList.remove("expand");
+}, 40)
+    </script>
 </body>
 </html>
