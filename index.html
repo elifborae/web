@@ -26,20 +26,21 @@
     </div>
 
     <div class="cursor"></div>
+    <p>index</p>
+     <script>
+    const cursor = document.querySelector('.cursor');
 
-    <script>
-const cursor = document.querySelector('.cursor');
-document.addEventListener('mousemove' , e => {
-    cursor.setAttribute("style" , "top: "+(e.pageY - 7.5)+"px; left: "+(e.pageX - 7.5)+"px;")
-})
+    document.addEventListener('mousemove', e => {
+        cursor.setAttribute("style", "top: "+(e.pageY - 7.5)+"px; left: "+(e.pageX - 7.5)+"px;")
+    })
 
-document.addEventListener('click', () => {
-    cursor.classList.add("expand");
-})
+    document.addEventListener('click', () => {
+        cursor.classList.add("expand");
 
-setTimeout(() => {
-    cursor.classList.remove("expand");
-}, 40)
-    </script>
+        setTimeout(() => {
+            cursor.classList.remove("expand");
+        }, 500)
+    })
+</script>
 </body>
 </html>
