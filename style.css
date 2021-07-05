@@ -59,8 +59,8 @@ padding-right: 0;
     color:rgb(255, 153, 0);
 }
 
-#selected{
-    color:rgb(255, 153, 0);     
+#selected1 {
+    color:rgb(255, 153, 0);
 }
 
 body {
@@ -133,20 +133,29 @@ body {
 
 #hello_text {
     position: relative;
-    left: 150px;
-    top: 350px;
+    left: 8%;
+    top: 70%;
     width: 25%;
     background:none;
  }
 
-#background_shape {
+/* #background_shape1 {
     position: relative;
     display: inline-block;
-    left: 180px;
-    top: 430px;
+    left: 29%;
+    top: 63%;
     opacity: 60%;
     z-index: 0;
 }
+
+#background_shape2 {
+    position: relative;
+    display: inline-block;
+    left: 6%;
+    top: 65%;
+    opacity: 60%;
+    z-index: 0;
+} */
 
 
 
