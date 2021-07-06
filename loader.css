@@ -4,7 +4,7 @@
 
 .loader_background{
     transition: 0.5s, 0.5s ease-in-out;
-    transition-delay: 1.5s;
+    transition-delay: 0.8s;
 }
 
 .loader_background {
@@ -85,7 +85,7 @@
     
   }
   
-  75% {
+ 75% {
     transform: rotate(360deg);
     background-color: rgb(242, 219, 103);
     border-radius: 50%;

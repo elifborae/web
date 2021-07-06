@@ -143,7 +143,7 @@
         position: absolute;
         display: inline-block;
         left: 5%;
-        top: 20%;
+        top: 17%;
         z-index: -1;
     }
 
@@ -155,15 +155,15 @@
       z-index: -1;
   }
 
-  #background_shape4 {
+  /* #background_shape4 {
     position: absolute;
     display: inline-block;
     left: 25%;
-    top: 18%;
+    top: 21%;
     z-index: -1;
     opacity: 85%;
-    transform: rotate(-20deg);
-}
+    transform: rotate(172deg);
+} */
 
 #background_shape5 {
   position: absolute;
@@ -210,13 +210,19 @@
       }
       
       .column img:hover{ 
-        transform: scale(1.2);
+        /* transform: scale(1.2);
         filter: drop-shadow(2px 2px 2px #505050);
         z-index: 2;
-        filter: grayscale(0);
+        filter: grayscale(0); */
+        z-index: 2;
+        border: 1px rgb(255, 255, 255) solid;
+        border-radius: 2%;
+        transform: scale(1.5);
+       
       }
 
       .column {
+        position: relative;
         -ms-flex: 20%;
         flex: 20%;
         max-width: 20%;
@@ -224,9 +230,13 @@
       }
       
       .column img {
-        margin-top: 8px;
+        /* margin-top: 8px;
         vertical-align: middle;
+        width: 100%; */
+        position: inherit;
+        transition: 0.25s ease-in-out;
         width: 100%;
+        filter:none;
       }
       
       /* Responsive layout - makes a two column-layout instead of four columns */
