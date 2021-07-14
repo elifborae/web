@@ -5,42 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="projects.css">
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <title>Elif Dilara Bora - Product Designer</title>
-    <link rel="icon" href="icon.edb.png" type="png">
+    <link rel="icon" href="logo_1_header.png" type="png">
 </head>
 
 <body>
+    <span class="loader_background"><span class=loader></span></span>
     <div class="header">
         <div class="inner_header">
             <div class="logo_container">
                 <a href="index.html"><img src="icon.edb.png" type="png" height="60"></a>
             </div>
+
                 <ul class="navigation">
                 <a href="about.html"><li>About</li></a> 
-                <a href="projects.html"><li  id= "selected">Projects</li></a>
-                <a href="photography.html"><li>Photography</li></a>
+                <a href="projects.html"><li id="selected1">Projects</li></a>
+                <a href="photography.html"><li>Photography</li></a>                
             </ul>
         </div>
     </div>
 
-    <div class="cursor"></div>
-<p>projects</p>
-     <script>
-    const cursor = document.querySelector('.cursor');
+    <div class="cursor">        
+    </div>
 
-    document.addEventListener('mousemove', e => {
-        cursor.setAttribute("style", "top: "+(e.pageY - 7.5)+"px; left: "+(e.pageX - 7.5)+"px;")
-    })
+    <!-- <div class="work">
+        <div class=gate><img class="anim" src="turno.png" alt="project img">
+        <p>GATE</p>
+        </div>
 
-    document.addEventListener('click', () => {
-        cursor.classList.add("expand");
+        <img class="anim" src="hoc" alt="project img">
+        <img class="anim" src="gate.png" alt="project img">
+        <img class="anim" src="alesta" alt="project img">
+        <img class="anim" src="mate.png" alt="project img">
+        <img class="anim" src="gate" alt="project img">
+  
+    </div>
 
-        setTimeout(() => {
-            cursor.classList.remove("expand");
-        }, 500)
-    })
-</script>
+  <script type="text/javascript">
+    window.sr = ScrollReveal();
+    sr.reveal('.anim');
+</script> -->
+
+<div class="row"> 
+    <div class="column">
+      <div class=turno><img class= "photos" src="turno.png" style="width:100%"> 
+<!-- <p>TURNO</p> -->
+      </div>
+
+      <img class= "photos" src="alesta.png" style="width:100%"> 
+    </div> 
+
+
+
+    
+    <div class="column">
+          <img class= "photos" src="gate.png" style="width:100%">    
+          <img class= "photos" src="hoc.png" style="width:100%">  
+        </div> 
+
+        <div class="column">
+            <img class= "photos" src="mate.png" style="width:100%">     
+            <img class= "photos" src="gate2.png" style="width:100%">   
+          </div> 
+        </div> 
+
+
+
+
+<script src="./cursor.js"></script>
 </body>
 </html>
