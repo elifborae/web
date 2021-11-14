@@ -1,5 +1,5 @@
 let mousecursor= document.querySelector(".cursor");
-let navLinks = document.querySelectorAll('.navigation li , .logo_container');
+let navLinks = document.querySelectorAll('.navigation li , .logo_container , #hello_text a');
 
 
 window.addEventListener('mousemove' , cursor)
