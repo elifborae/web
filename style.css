@@ -4,7 +4,7 @@ padding: 0;
 list-style: none;
 text-decoration: none;
 font-family: 'Roboto', sans-serif;
-/* overflow: hidden; */
+overflow: hidden;
 }
 
 * ::selection {
@@ -135,7 +135,7 @@ body {
 #hello_text {
     position: relative;
     left: 8%;
-    top: 70%;
+    top: 50%;
     width: 25%;
     background:none;
     font-size: 24px;
